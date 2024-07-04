@@ -120,7 +120,7 @@
         var { value: jawaban } = await swals.fire({
             title: 'Tulis Pesan &#128073;&#128072;', input: 'text', allowOutsideClick: false, showCancelButton: false,
         });
-        if(jawaban && jawaban.length < 19){
+        if(jawaban && jawaban.length < 200){
             window.jawaban = jawaban;
             pesanwhatsapp = jawaban;balasan = jawaban;
             otomatis3();setTimeout(stakhir,1000);
